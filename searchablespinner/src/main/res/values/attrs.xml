@@ -4,6 +4,7 @@
         <!-- View attributes -->
         <attr name="RevealViewBackgroundColor" format="color" />
         <attr name="StartSearchTintColor" format="color" />
+        <attr name="StartSearchHintTintColor" format="color" />
         <attr name="SearchViewBackgroundColor" format="color" />
         <attr name="SearchViewTextColor" format="color" />
         <attr name="DoneSearchTintColor" format="color" />

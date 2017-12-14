@@ -90,6 +90,7 @@ public class SearchableSpinner extends RelativeLayout implements View.OnClickLis
     /* Attributes */
     private @ColorInt int mRevealViewBackgroundColor;
     private @ColorInt int mStartEditTintColor;
+    private @ColorInt int mStartEditHintTintColor;
     private @ColorInt int mEditViewBackgroundColor;
     private @ColorInt int mEditViewTextColor;
     private @ColorInt int mDoneEditTintColor;
@@ -172,6 +173,7 @@ public class SearchableSpinner extends RelativeLayout implements View.OnClickLis
 
                 mRevealViewBackgroundColor = attributes.getColor(R.styleable.SearchableSpinner_RevealViewBackgroundColor, Color.WHITE);
                 mStartEditTintColor = attributes.getColor(R.styleable.SearchableSpinner_StartSearchTintColor, Color.GRAY);
+                mStartEditHintTintColor = attributes.getColor(R.styleable.SearchableSpinner_StartSearchHintTintColor, Color.GRAY);
                 mEditViewBackgroundColor = attributes.getColor(R.styleable.SearchableSpinner_SearchViewBackgroundColor, Color.WHITE);
                 mEditViewTextColor = attributes.getColor(R.styleable.SearchableSpinner_SearchViewTextColor, Color.BLACK);
                 mDoneEditTintColor = attributes.getColor(R.styleable.SearchableSpinner_DoneSearchTintColor, Color.GRAY);
@@ -428,6 +430,7 @@ public class SearchableSpinner extends RelativeLayout implements View.OnClickLis
         mRevealItem.setBackgroundColor(mRevealViewBackgroundColor);
         mStartSearchImageView.setBackgroundColor(mRevealViewBackgroundColor);
         mStartSearchImageView.setTextColor(mStartEditTintColor);
+        mStartSearchImageView.setHintTextColor(mStartEditHintTintColor);
 
         mContainerCardView.setBackgroundColor(mEditViewBackgroundColor);
         mSearchEditText.setBackgroundColor(mEditViewBackgroundColor);
